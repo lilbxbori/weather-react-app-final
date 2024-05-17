@@ -4,11 +4,11 @@ import './App.css';
 
 function App() {
   return (
-
     <div className="App">
       <div className="container">
     
-        <Weather />
+        <Weather defaultCity="New York" />
+      
         <footer>
             This project was coded by{" "} <a href="https://responsive-portfolio-marilu.netlify.app/" target="_blank" rel="noreferrer">Marilu Chacon</a> 
             {" "}  and is {" "} 
