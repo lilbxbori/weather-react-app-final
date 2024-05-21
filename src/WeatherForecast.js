@@ -16,20 +16,20 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
         <div className="row">
-          {forecast.map(function(dailyForecast, index){
+          {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
-              return(
+              return (
                 <div className="col" key={index}>
-                 <WeatherForecastDay data={dailyForecast} />
-                 </div>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
               );
             }
-            })}    
+          })}
         </div>
       </div>
     );
   } else {
-    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let apiKey = "f5e814a04eddfab1740f07bf0328eee2";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
