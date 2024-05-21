@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <style>{'body { background: linear-gradient(to top, #09203f 0%, #537895 100%); background-attachment: fixed; }'}</style>
       <div className="container">
     
         <Weather defaultCity="New York" />
